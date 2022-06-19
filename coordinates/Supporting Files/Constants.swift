@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Constants {
-    static let googleMapsApiKey = "AIzaSyBSBGCIl1dbSlNofPpPF89eo5fVd6Us40I"
+    static let googleMapsApiKey = ""
     static let coordinatesURL = "https://waadsu.com/api/russia.geo.json"
     
     static let meridianLongitude = -179.9999999999999

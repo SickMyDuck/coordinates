@@ -17,8 +17,19 @@
 		598B74B9285B848500DC8E9F /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74B8285B848500DC8E9F /* MapPresenter.swift */; };
 		598B74BB285B928B00DC8E9F /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74BA285B928A00DC8E9F /* MapInteractor.swift */; };
 		598B74BD285BDDE500DC8E9F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74BC285BDDE500DC8E9F /* Coordinate.swift */; };
+		598B74C5285F1E2E00DC8E9F /* CoordinatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74C4285F1E2E00DC8E9F /* CoordinatesTests.swift */; };
 		A5755195A71CDE4D25C41011 /* Pods_coordinates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7041695320B6A23878748679 /* Pods_coordinates.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		598B74C6285F1E2E00DC8E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 598B74922858D52C00DC8E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 598B74992858D52C00DC8E9F;
+			remoteInfo = coordinates;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		598B749A2858D52C00DC8E9F /* coordinates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coordinates.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +44,8 @@
 		598B74B8285B848500DC8E9F /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		598B74BA285B928A00DC8E9F /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		598B74BC285BDDE500DC8E9F /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		598B74C2285F1E2D00DC8E9F /* coordinatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coordinatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		598B74C4285F1E2E00DC8E9F /* CoordinatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesTests.swift; sourceTree = "<group>"; };
 		7041695320B6A23878748679 /* Pods_coordinates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coordinates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A22621E2C833FD336248964 /* Pods-coordinates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coordinates.release.xcconfig"; path = "Target Support Files/Pods-coordinates/Pods-coordinates.release.xcconfig"; sourceTree = "<group>"; };
 		E51C5348F1EA71BC8EFDF104 /* Pods-coordinates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coordinates.debug.xcconfig"; path = "Target Support Files/Pods-coordinates/Pods-coordinates.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		598B74BF285F1E2D00DC8E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				598B749C2858D52C00DC8E9F /* coordinates */,
+				598B74C3285F1E2D00DC8E9F /* CoordinatesTests */,
 				598B749B2858D52C00DC8E9F /* Products */,
 				855E6F18B451B62835C0AD0E /* Pods */,
 				8632D8D700348BD31D89E923 /* Frameworks */,
@@ -64,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				598B749A2858D52C00DC8E9F /* coordinates.app */,
+				598B74C2285F1E2D00DC8E9F /* coordinatesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +140,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		598B74C3285F1E2D00DC8E9F /* CoordinatesTests */ = {
+			isa = PBXGroup;
+			children = (
+				598B74C4285F1E2E00DC8E9F /* CoordinatesTests.swift */,
+			);
+			path = CoordinatesTests;
+			sourceTree = "<group>";
+		};
 		855E6F18B451B62835C0AD0E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +188,24 @@
 			productReference = 598B749A2858D52C00DC8E9F /* coordinates.app */;
 			productType = "com.apple.product-type.application";
 		};
+		598B74C1285F1E2D00DC8E9F /* coordinatesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 598B74C8285F1E2E00DC8E9F /* Build configuration list for PBXNativeTarget "coordinatesTests" */;
+			buildPhases = (
+				598B74BE285F1E2D00DC8E9F /* Sources */,
+				598B74BF285F1E2D00DC8E9F /* Frameworks */,
+				598B74C0285F1E2D00DC8E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				598B74C7285F1E2E00DC8E9F /* PBXTargetDependency */,
+			);
+			name = coordinatesTests;
+			productName = coordinatesTests;
+			productReference = 598B74C2285F1E2D00DC8E9F /* coordinatesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +218,10 @@
 				TargetAttributes = {
 					598B74992858D52C00DC8E9F = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					598B74C1285F1E2D00DC8E9F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 598B74992858D52C00DC8E9F;
 					};
 				};
 			};
@@ -187,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				598B74992858D52C00DC8E9F /* coordinates */,
+				598B74C1285F1E2D00DC8E9F /* coordinatesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +252,13 @@
 				598B74AA2858D53400DC8E9F /* LaunchScreen.storyboard in Resources */,
 				598B74A72858D53400DC8E9F /* Assets.xcassets in Resources */,
 				598B74A52858D52C00DC8E9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		598B74C0285F1E2D00DC8E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +338,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		598B74BE285F1E2D00DC8E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				598B74C5285F1E2E00DC8E9F /* CoordinatesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		598B74C7285F1E2E00DC8E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 598B74992858D52C00DC8E9F /* coordinates */;
+			targetProxy = 598B74C6285F1E2E00DC8E9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		598B74A32858D52C00DC8E9F /* Main.storyboard */ = {
@@ -472,6 +548,42 @@
 			};
 			name = Release;
 		};
+		598B74C9285F1E2E00DC8E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR3FLKSKAU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SeeqMyDuck.coordinatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coordinates.app/coordinates";
+			};
+			name = Debug;
+		};
+		598B74CA285F1E2E00DC8E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR3FLKSKAU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SeeqMyDuck.coordinatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coordinates.app/coordinates";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +601,15 @@
 			buildConfigurations = (
 				598B74AF2858D53400DC8E9F /* Debug */,
 				598B74B02858D53400DC8E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		598B74C8285F1E2E00DC8E9F /* Build configuration list for PBXNativeTarget "coordinatesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				598B74C9285F1E2E00DC8E9F /* Debug */,
+				598B74CA285F1E2E00DC8E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

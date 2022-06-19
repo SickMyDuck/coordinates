@@ -49,7 +49,7 @@ extension MapInteractor: MapLogic {
         
      
     }
-    // Для упрощения понимания кода используем inout процедуру
+    // Для упрощения понимания кода используем inout параметр
     func parseJSON(jsonObject: JSON, coordinatesArray: inout [[Coordinate]]) {
         for (_, element):(String, JSON) in jsonObject{
             // Проверяем элемент [0][0], т.к. координата широты и долготы находятся в массиве,

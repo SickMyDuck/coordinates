@@ -18,6 +18,7 @@ class MapViewController: UIViewController {
     //MARK: - Internal Vars
     private var interactor: MapLogic?
     
+    //MARK: - Init
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
@@ -49,7 +50,7 @@ class MapViewController: UIViewController {
       view = mapView
     }
 
-
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         
         super.viewDidLoad()
