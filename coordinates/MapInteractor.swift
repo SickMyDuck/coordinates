@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-protocol MapLogic {
+protocol MapBusinessLogic {
     func fetchCoordinates()
 }
 
@@ -19,10 +19,23 @@ class MapInteractor {
     var presenter: MapPresentationLogic?
 }
 
-extension MapInteractor: MapLogic {
+//MARK: -  Business Logic Implementation
+extension MapInteractor: MapBusinessLogic {
     
     func fetchCoordinates() {
         
+        retrieveCoordinates { coordinatesArray in
+            guard coordinatesArray.count > 0 else {
+                fatalError("Error: no elements in coordinatesArray")
+            }
+            // Передадим полученные данные в presenter для их обработки
+            self.presenter?.presentData(coordinatesArray: coordinatesArray)
+        }
+    }
+    
+    
+    func retrieveCoordinates(_ completion: @escaping (([[Coordinate]]) -> Void)) {
+     
         var coordinatesArray = [[Coordinate]]()
         
         let url = Constants.coordinatesURL
@@ -39,13 +52,16 @@ extension MapInteractor: MapLogic {
                 self.parseJSON(jsonObject: json["features",0,"geometry","coordinates"],
                                coordinatesArray: &coordinatesArray)
                 
-                // Передадим полученные данные в presenter для их обработки
-                self.presenter?.presentData(coordinatesArray: coordinatesArray)
-                
             case .failure(let error):
                 print("Error fetching data from URL: \(error)")
             }
+            
+            completion(coordinatesArray)
         }
+        
+    
+
+
         
      
     }

@@ -17,12 +17,17 @@
 		598B74B9285B848500DC8E9F /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74B8285B848500DC8E9F /* MapPresenter.swift */; };
 		598B74BB285B928B00DC8E9F /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74BA285B928A00DC8E9F /* MapInteractor.swift */; };
 		598B74BD285BDDE500DC8E9F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74BC285BDDE500DC8E9F /* Coordinate.swift */; };
-		598B74C5285F1E2E00DC8E9F /* CoordinatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B74C4285F1E2E00DC8E9F /* CoordinatesTests.swift */; };
+		59B7C905285FBC67004E4FA5 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7C904285FBC67004E4FA5 /* MapViewControllerTests.swift */; };
+		59B7C908285FBE65004E4FA5 /* MapBusinessLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7C907285FBE65004E4FA5 /* MapBusinessLogicSpy.swift */; };
+		59B7C90A286069BD004E4FA5 /* MapDisplayLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7C909286069BD004E4FA5 /* MapDisplayLogicSpy.swift */; };
+		59B7C90C28606DF8004E4FA5 /* MapPresentationLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7C90B28606DF8004E4FA5 /* MapPresentationLogicSpy.swift */; };
+		59B7C90E28606FD3004E4FA5 /* MapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7C90D28606FD3004E4FA5 /* MapPresenterTests.swift */; };
+		59B7C91028607692004E4FA5 /* MapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7C90F28607692004E4FA5 /* MapInteractorTests.swift */; };
 		A5755195A71CDE4D25C41011 /* Pods_coordinates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7041695320B6A23878748679 /* Pods_coordinates.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		598B74C6285F1E2E00DC8E9F /* PBXContainerItemProxy */ = {
+		59B7C8FF285FBBA9004E4FA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 598B74922858D52C00DC8E9F /* Project object */;
 			proxyType = 1;
@@ -44,8 +49,13 @@
 		598B74B8285B848500DC8E9F /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		598B74BA285B928A00DC8E9F /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		598B74BC285BDDE500DC8E9F /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
-		598B74C2285F1E2D00DC8E9F /* coordinatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coordinatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		598B74C4285F1E2E00DC8E9F /* CoordinatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesTests.swift; sourceTree = "<group>"; };
+		59B7C8FB285FBBA9004E4FA5 /* CoordinatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B7C904285FBC67004E4FA5 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		59B7C907285FBE65004E4FA5 /* MapBusinessLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBusinessLogicSpy.swift; sourceTree = "<group>"; };
+		59B7C909286069BD004E4FA5 /* MapDisplayLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDisplayLogicSpy.swift; sourceTree = "<group>"; };
+		59B7C90B28606DF8004E4FA5 /* MapPresentationLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresentationLogicSpy.swift; sourceTree = "<group>"; };
+		59B7C90D28606FD3004E4FA5 /* MapPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenterTests.swift; sourceTree = "<group>"; };
+		59B7C90F28607692004E4FA5 /* MapInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractorTests.swift; sourceTree = "<group>"; };
 		7041695320B6A23878748679 /* Pods_coordinates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coordinates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A22621E2C833FD336248964 /* Pods-coordinates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coordinates.release.xcconfig"; path = "Target Support Files/Pods-coordinates/Pods-coordinates.release.xcconfig"; sourceTree = "<group>"; };
 		E51C5348F1EA71BC8EFDF104 /* Pods-coordinates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coordinates.debug.xcconfig"; path = "Target Support Files/Pods-coordinates/Pods-coordinates.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,7 +70,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		598B74BF285F1E2D00DC8E9F /* Frameworks */ = {
+		59B7C8F8285FBBA9004E4FA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				598B749C2858D52C00DC8E9F /* coordinates */,
-				598B74C3285F1E2D00DC8E9F /* CoordinatesTests */,
+				59B7C8FC285FBBA9004E4FA5 /* CoordinatesTests */,
 				598B749B2858D52C00DC8E9F /* Products */,
 				855E6F18B451B62835C0AD0E /* Pods */,
 				8632D8D700348BD31D89E923 /* Frameworks */,
@@ -85,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				598B749A2858D52C00DC8E9F /* coordinates.app */,
-				598B74C2285F1E2D00DC8E9F /* coordinatesTests.xctest */,
+				59B7C8FB285FBBA9004E4FA5 /* CoordinatesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,12 +150,25 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		598B74C3285F1E2D00DC8E9F /* CoordinatesTests */ = {
+		59B7C8FC285FBBA9004E4FA5 /* CoordinatesTests */ = {
 			isa = PBXGroup;
 			children = (
-				598B74C4285F1E2E00DC8E9F /* CoordinatesTests.swift */,
+				59B7C90F28607692004E4FA5 /* MapInteractorTests.swift */,
+				59B7C90D28606FD3004E4FA5 /* MapPresenterTests.swift */,
+				59B7C904285FBC67004E4FA5 /* MapViewControllerTests.swift */,
+				59B7C906285FBDD2004E4FA5 /* Spies */,
 			);
 			path = CoordinatesTests;
+			sourceTree = "<group>";
+		};
+		59B7C906285FBDD2004E4FA5 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				59B7C907285FBE65004E4FA5 /* MapBusinessLogicSpy.swift */,
+				59B7C909286069BD004E4FA5 /* MapDisplayLogicSpy.swift */,
+				59B7C90B28606DF8004E4FA5 /* MapPresentationLogicSpy.swift */,
+			);
+			path = Spies;
 			sourceTree = "<group>";
 		};
 		855E6F18B451B62835C0AD0E /* Pods */ = {
@@ -188,22 +211,22 @@
 			productReference = 598B749A2858D52C00DC8E9F /* coordinates.app */;
 			productType = "com.apple.product-type.application";
 		};
-		598B74C1285F1E2D00DC8E9F /* coordinatesTests */ = {
+		59B7C8FA285FBBA9004E4FA5 /* CoordinatesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 598B74C8285F1E2E00DC8E9F /* Build configuration list for PBXNativeTarget "coordinatesTests" */;
+			buildConfigurationList = 59B7C901285FBBA9004E4FA5 /* Build configuration list for PBXNativeTarget "CoordinatesTests" */;
 			buildPhases = (
-				598B74BE285F1E2D00DC8E9F /* Sources */,
-				598B74BF285F1E2D00DC8E9F /* Frameworks */,
-				598B74C0285F1E2D00DC8E9F /* Resources */,
+				59B7C8F7285FBBA9004E4FA5 /* Sources */,
+				59B7C8F8285FBBA9004E4FA5 /* Frameworks */,
+				59B7C8F9285FBBA9004E4FA5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				598B74C7285F1E2E00DC8E9F /* PBXTargetDependency */,
+				59B7C900285FBBA9004E4FA5 /* PBXTargetDependency */,
 			);
-			name = coordinatesTests;
-			productName = coordinatesTests;
-			productReference = 598B74C2285F1E2D00DC8E9F /* coordinatesTests.xctest */;
+			name = CoordinatesTests;
+			productName = CoordinatesTests;
+			productReference = 59B7C8FB285FBBA9004E4FA5 /* CoordinatesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +242,7 @@
 					598B74992858D52C00DC8E9F = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					598B74C1285F1E2D00DC8E9F = {
+					59B7C8FA285FBBA9004E4FA5 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 598B74992858D52C00DC8E9F;
 					};
@@ -239,7 +262,7 @@
 			projectRoot = "";
 			targets = (
 				598B74992858D52C00DC8E9F /* coordinates */,
-				598B74C1285F1E2D00DC8E9F /* coordinatesTests */,
+				59B7C8FA285FBBA9004E4FA5 /* CoordinatesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		598B74C0285F1E2D00DC8E9F /* Resources */ = {
+		59B7C8F9285FBBA9004E4FA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,21 +361,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		598B74BE285F1E2D00DC8E9F /* Sources */ = {
+		59B7C8F7285FBBA9004E4FA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598B74C5285F1E2E00DC8E9F /* CoordinatesTests.swift in Sources */,
+				59B7C90C28606DF8004E4FA5 /* MapPresentationLogicSpy.swift in Sources */,
+				59B7C91028607692004E4FA5 /* MapInteractorTests.swift in Sources */,
+				59B7C908285FBE65004E4FA5 /* MapBusinessLogicSpy.swift in Sources */,
+				59B7C905285FBC67004E4FA5 /* MapViewControllerTests.swift in Sources */,
+				59B7C90A286069BD004E4FA5 /* MapDisplayLogicSpy.swift in Sources */,
+				59B7C90E28606FD3004E4FA5 /* MapPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		598B74C7285F1E2E00DC8E9F /* PBXTargetDependency */ = {
+		59B7C900285FBBA9004E4FA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 598B74992858D52C00DC8E9F /* coordinates */;
-			targetProxy = 598B74C6285F1E2E00DC8E9F /* PBXContainerItemProxy */;
+			targetProxy = 59B7C8FF285FBBA9004E4FA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -548,7 +576,7 @@
 			};
 			name = Release;
 		};
-		598B74C9285F1E2E00DC8E9F /* Debug */ = {
+		59B7C902285FBBA9004E4FA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -557,7 +585,7 @@
 				DEVELOPMENT_TEAM = GR3FLKSKAU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SeeqMyDuck.coordinatesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = SeeqMyDuck.CoordinatesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -566,7 +594,7 @@
 			};
 			name = Debug;
 		};
-		598B74CA285F1E2E00DC8E9F /* Release */ = {
+		59B7C903285FBBA9004E4FA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,7 +603,7 @@
 				DEVELOPMENT_TEAM = GR3FLKSKAU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SeeqMyDuck.coordinatesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = SeeqMyDuck.CoordinatesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -605,11 +633,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		598B74C8285F1E2E00DC8E9F /* Build configuration list for PBXNativeTarget "coordinatesTests" */ = {
+		59B7C901285FBBA9004E4FA5 /* Build configuration list for PBXNativeTarget "CoordinatesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				598B74C9285F1E2E00DC8E9F /* Debug */,
-				598B74CA285F1E2E00DC8E9F /* Release */,
+				59B7C902285FBBA9004E4FA5 /* Debug */,
+				59B7C903285FBBA9004E4FA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -16,7 +16,7 @@ protocol MapDisplayLogic: AnyObject {
 class MapViewController: UIViewController {
     
     //MARK: - Internal Vars
-    private var interactor: MapLogic?
+    var interactor: MapBusinessLogic?
     
     //MARK: - Init
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -36,11 +36,12 @@ class MapViewController: UIViewController {
         let presenter = MapPresenter()
         let interactor = MapInteractor()
         interactor.presenter = presenter
-        presenter.viewController = viewController
+        presenter.viewController = self
         viewController.interactor = interactor
+
     }
     
-    private lazy var mapView: GMSMapView = {
+    private var mapView: GMSMapView = {
         let cameraPosition = GMSCameraPosition(latitude: Constants.labelLatitude, longitude: Constants.labelLongitude, zoom: 1)
         return GMSMapView(frame: .zero, camera: cameraPosition)
     }()
